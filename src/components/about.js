@@ -27,7 +27,7 @@ function About() {
         </h3>
         <br />
         <p>
-          I’m Shanya Sahu, I bring <b>3 years</b> of development experience,
+          {/* I’m Shanya Sahu, I bring <b>3 years</b> of development experience,
           including <b>1.5 years of freelance work</b>, specializing in building
           responsive, high-performance web applications using{" "}
           <b>Next.js and Tailwind CSS</b>. Currently employed at Creatus Media,
@@ -38,7 +38,23 @@ function About() {
           <b>WordPress and Shopify</b>, which adds versatility to my technical
           skill set. I’m actively seeking a <b>Full Stack Developer Role</b>{" "}
           that will allow me to further deepen my skills, take on new
-          challenges, and contribute meaningfully to impactful projects.
+          challenges, and contribute meaningfully to impactful projects. */}
+          I’m Shanya Sahu with 3 years of experience delivering responsive,
+          scalable, and high-performance web applications using React, Next.js,
+          TypeScript, Redux Toolkit, and modern JavaScript. I focus on building
+          reusable UI components, integrating REST APIs, implementing secure
+          authentication flows, and boosting Lighthouse performance scores. I
+          deliver pixel-perfect, cross-browser-compatible interfaces, convert
+          Figma designs into production-ready layouts, and ensure accessibility,
+          SEO, and mobile-first best practices.
+          <br />
+          My work spans e-commerce platforms, dashboards, client-facing
+          websites, and CMS-driven products using WordPress and Shopify Liquid.
+          I collaborate with backend teams and have hands-on experience with
+          Node.js, Express, MongoDB, and PostgreSQL for API development. I enjoy
+          solving UI/UX challenges, improving onboarding experiences,
+          contributing in Agile teams, and turning complex problems into clean,
+          maintainable code.
         </p>
 
         <br />

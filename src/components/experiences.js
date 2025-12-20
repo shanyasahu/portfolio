@@ -10,7 +10,7 @@ function Experiences() {
         I had worked on multiple companies!
       </h3>
       <section className="grid w-full">
-        <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center m-0 mt-16 md:m-5 justify-self-start flex-col md:flex-row">
+        {/* <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center m-0 mt-16 md:m-5 justify-self-start flex-col md:flex-row">
           <div className="bg-[--link] text-white py-9 px-14 m-[1px] shadow-lg">
             <h3 className="text-4xl my-1">2023</h3>
             <p className="text-white">Dec to Pre</p>
@@ -34,7 +34,7 @@ function Experiences() {
               web development.
             </p>
           </div>
-        </div>
+        </div> */}
 
         <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center m-0 mt-16 md:m-5 justify-self-end flex-col md:flex-row">
           <div className="bg-[--pink] text-white py-9 px-14 m-[1px] shadow-lg">
