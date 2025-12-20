@@ -55,9 +55,9 @@ function Experiences() {
             </p>
             <hr className="my-2" />
             <p className="my-1 text-sm">
-              First International job as WordPress dev, full-time. Loving the
-              atmosphere, thrilled to be part of the team. Grateful for
-              opportunity.
+              Built scalable Next.js UIs with reusable components, REST API
+              integration, auth flows, and responsive ui optimized for
+              performance.
             </p>
           </div>
         </div>
@@ -80,8 +80,9 @@ function Experiences() {
             </p>
             <hr className="my-2" />
             <p className="my-1 text-sm">
-              Here, I Started my full-time WordPress developer job, learning
-              client meetings, collaboration, and more.
+              Developed React-based client interfaces, improved Lighthouse
+              scores, and optimized UI layouts for speed, usability, and mobile
+              delivery.
             </p>
           </div>
         </div>
@@ -104,8 +105,8 @@ function Experiences() {
             </p>
             <hr className="my-2" />
             <p className="my-1 text-sm">
-              Another great move on WordPress, Enhancing skills was great,
-              learned a lot, including e-commerce advancements.
+              Created responsive e-commerce pages, improved performance, helped
+              deliver cleaner product browsing experiences across devices.
             </p>
           </div>
         </div>
@@ -128,8 +129,9 @@ function Experiences() {
             </p>
             <hr className="my-2" />
             <p className="my-1 text-sm">
-              My first web development internship focused on showcasing my
-              skills by working with WordPress and Shopify platforms.
+              Built business websites with HTML, CSS, JS, Shopify, and
+              WordPress, ensuring responsive layouts, structured UI, and
+              CMS-driven delivery.
             </p>
           </div>
         </div>

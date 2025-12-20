@@ -39,22 +39,30 @@ function About() {
           skill set. I’m actively seeking a <b>Full Stack Developer Role</b>{" "}
           that will allow me to further deepen my skills, take on new
           challenges, and contribute meaningfully to impactful projects. */}
-          I’m Shanya Sahu with 3 years of experience delivering responsive,
-          scalable, and high-performance web applications using React, Next.js,
-          TypeScript, Redux Toolkit, and modern JavaScript. I focus on building
-          reusable UI components, integrating REST APIs, implementing secure
-          authentication flows, and boosting Lighthouse performance scores. I
-          deliver pixel-perfect, cross-browser-compatible interfaces, convert
-          Figma designs into production-ready layouts, and ensure accessibility,
-          SEO, and mobile-first best practices.
+          I’m <b>Shanya Sahu</b> with <b>3 years of experience</b> delivering
+          <b> responsive</b>, <b>scalable</b>, and <b>high-performance</b> web
+          applications using <b>React</b>, <b>Next.js</b>, <b>TypeScript</b>,{" "}
+          <b>Redux Toolkit</b>, and modern
+          <b> JavaScript</b>. I focus on building <b>reusable UI components</b>,
+          integrating <b>REST APIs</b>, implementing secure{" "}
+          <b>authentication</b> flows, and boosting
+          <b> Lighthouse performance</b> scores. I deliver <b>pixel-perfect</b>,{" "}
+          <b>cross-browser-compatible</b> interfaces, convert{" "}
+          <b>Figma designs</b> into production-ready layouts, and ensure
+          <b> accessibility</b>, <b>SEO</b>, and <b>mobile-first</b> best
+          practices.
           <br />
-          My work spans e-commerce platforms, dashboards, client-facing
-          websites, and CMS-driven products using WordPress and Shopify Liquid.
-          I collaborate with backend teams and have hands-on experience with
-          Node.js, Express, MongoDB, and PostgreSQL for API development. I enjoy
-          solving UI/UX challenges, improving onboarding experiences,
-          contributing in Agile teams, and turning complex problems into clean,
-          maintainable code.
+          <br />
+          My work spans <b>e-commerce platforms</b>, <b>dashboards</b>,
+          <b> client-facing websites</b>, and <b>CMS-driven products</b> using
+          <b> WordPress</b> and <b>Shopify Liquid</b>. I collaborate with
+          backend teams and have hands-on experience with
+          <b> Node.js</b>, <b>Express</b>, <b>MongoDB</b>, and <b>PostgreSQL</b>{" "}
+          for
+          <b> API development</b>. I enjoy solving <b>UI/UX challenges</b>,
+          improving onboarding experiences, contributing in <b>Agile</b> teams,
+          and turning complex problems into
+          <b> clean, maintainable code</b>.
         </p>
 
         <br />
