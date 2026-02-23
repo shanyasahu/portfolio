@@ -39,7 +39,7 @@ function About() {
           skill set. I’m actively seeking a <b>Full Stack Developer Role</b>{" "}
           that will allow me to further deepen my skills, take on new
           challenges, and contribute meaningfully to impactful projects. */}
-          I’m <b>Shanya Sahu</b> with <b>3 years of experience</b> delivering
+          I’m <b>Shanya Sahu</b> with <b>3+ years of experience</b> delivering
           <b> responsive</b>, <b>scalable</b>, and <b>high-performance</b> web
           applications using <b>React</b>, <b>Next.js</b>, <b>TypeScript</b>,{" "}
           <b>Redux Toolkit</b>, and modern

@@ -7,8 +7,8 @@ import { RxCross2 } from "react-icons/rx";
 import { HiMiniBars3 } from "react-icons/hi2";
 
 function Sidebar() {
-  const githubUrl = "https://github.com/Shanya-Sahu";
-  const linkedinUrl = "https://www.linkedin.com/in/shanya-sahu-web-developer/";
+  const githubUrl = "https://github.com/shanyasahu";
+  const linkedinUrl = "https://www.linkedin.com/in/shanyasahu";
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const sidebarRef = useRef(null);
 
