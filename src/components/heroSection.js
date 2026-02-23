@@ -39,6 +39,7 @@ function HeroSection() {
   }
 
   const phrases = [
+    "Frontend Developer",
     "Full Stack Developer",
     "MERN Stack Developer",
     "WordPress Developer",
