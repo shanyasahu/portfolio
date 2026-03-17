@@ -27,49 +27,42 @@ function About() {
         </h3>
         <br />
         <p>
-          {/* I’m Shanya Sahu, I bring <b>3 years</b> of development experience,
-          including <b>1.5 years of freelance work</b>, specializing in building
-          responsive, high-performance web applications using{" "}
-          <b>Next.js and Tailwind CSS</b>. Currently employed at Creatus Media,
-          I am expanding my expertise toward <b>Full Stack Development</b> with
-          a growing command of{" "}
-          <b>TypeScript, Express.js, MongoDB, and PostgreSQL</b>. I also have a
-          knowledge in the <b>MERN stack</b> and hands-on experience with{" "}
-          <b>WordPress and Shopify</b>, which adds versatility to my technical
-          skill set. I’m actively seeking a <b>Full Stack Developer Role</b>{" "}
-          that will allow me to further deepen my skills, take on new
-          challenges, and contribute meaningfully to impactful projects. */}
-          I’m <b>Shanya</b> with <b>3+ years of experience</b> delivering
-          <b> responsive</b>, <b>scalable</b>, and <b>high-performance</b> web
-          applications using <b>React</b>, <b>Next.js</b>, <b>TypeScript</b>,{" "}
-          <b>Redux Toolkit</b>, and modern
-          <b> JavaScript</b>. I focus on building <b>reusable UI components</b>,
-          integrating <b>REST APIs</b>, implementing secure{" "}
-          <b>authentication</b> flows, and boosting
-          <b> Lighthouse performance</b> scores. I deliver <b>pixel-perfect</b>,{" "}
-          <b>cross-browser-compatible</b> interfaces, convert{" "}
-          <b>Figma designs</b> into production-ready layouts, and ensure
-          <b> accessibility</b>, <b>SEO</b>, and <b>mobile-first</b> best
-          practices.
-          <br />
-          <br />
-          My work spans <b>e-commerce platforms</b>, <b>dashboards</b>,
-          <b> client-facing websites</b>, and <b>CMS-driven products</b> using
-          <b> WordPress</b> and <b>Shopify Liquid</b>. I collaborate with
-          backend teams and have hands-on experience with
-          <b> Node.js</b>, <b>Express</b>, <b>MongoDB</b>, and <b>PostgreSQL</b>{" "}
-          for
-          <b> API development</b>. I enjoy solving <b>UI/UX challenges</b>,
-          improving onboarding experiences, contributing in <b>Agile</b> teams,
-          and turning complex problems into
-          <b> clean, maintainable code</b>.
+          I’m <strong>Shanya</strong>, a <strong>Frontend Developer</strong>{" "}
+          with
+          <strong> 3+ years of experience</strong> building
+          <strong> scalable</strong> and{" "}
+          <strong>responsive web applications</strong>
+          using <strong>React.js, Next.js, and WordPress</strong>. I specialize
+          in <strong>component-based architecture</strong>,
+          <strong> REST API integration</strong>, and
+          <strong> performance optimization</strong> to deliver seamless user
+          experiences. I have a proven track record of improving
+          <strong> Lighthouse scores</strong>, enhancing
+          <strong> SEO</strong>, and developing
+          <strong> high-quality, user-centric applications</strong>.
+        </p>
+        <br />
+        <p>
+          I successfully managed my <strong>freelance work</strong> alongside
+          <strong> full-time employment</strong> and
+          <strong> M.Sc. studies</strong>, demonstrating strong
+          <strong> multitasking</strong>, <strong>ownership</strong>, and{" "}
+          <strong> time management</strong> skills.
+        </p>
+        <br />
+        <p>
+          I’m currently seeking opportunities as a
+          <strong> React/Frontend Developer</strong> in
+          <strong> product-based environments</strong>, where I can contribute
+          to building
+          <strong> impactful and scalable digital solutions</strong>.
         </p>
 
         <br />
         <h4 className="text-xl text-[var(--pri-heading)] font-semibold">
           Shanya Sahu
         </h4>
-        <p className="text-sm font-bold">Full Stack Developer</p>
+        <p className="text-sm font-bold">Web Developer</p>
 
         <div className="hidden lg:flex">
           <a

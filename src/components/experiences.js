@@ -31,7 +31,7 @@ function Experiences() {
             <p className="my-1 text-sm">
               Full stack developer with live project experience, strong
               collaboration skills, and solid industry-level coding knowledge in
-              web development.
+              Frontend development.
             </p>
           </div>
         </div> */}
@@ -48,20 +48,48 @@ function Experiences() {
           ></div>
           <div className="shadow-lg bg-white p-10">
             <h3 className="text-2xl my-1 font-semibold">
-              Web <span className="text-[--pink]">Developer</span>
+              Frontend <span className="text-[--pink]">Developer</span>
             </h3>
             <p className="text-[--pink] my-1 text-sm font-semibold">
               CreatUs Media | Belgium | Full Time
             </p>
             <hr className="my-2" />
             <p className="my-1 text-sm">
-              Built scalable Next.js UIs with reusable components, REST API
+              {/* Built scalable Next.js UIs with reusable components, REST API
               integration, auth flows, and responsive ui optimized for
-              performance.
+              performance. */}
+              Built responsive WordPress sites using HTML, CSS, and JS,
+              improving performance, SEO, and cross-browser compatibility.
             </p>
           </div>
         </div>
+
         <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center m-0 mt-16 md:m-5 justify-self-start flex-col md:flex-row">
+          <div className="bg-[--pri-heading] text-white py-9 px-14 m-[1px] shadow-lg">
+            <h3 className="text-4xl my-1">2024</h3>
+            <p className="text-white">Jan to Apr</p>
+            <h3 className="text-4xl my-1">2025</h3>
+          </div>
+          <div
+            className="triangle"
+            style={{ borderBottom: "20px solid var(--pri-heading)" }}
+          ></div>
+          <div className="shadow-lg bg-white p-10">
+            <h3 className="text-2xl my-1 font-semibold">
+              Frontend <span className="text-[--pri-heading]">Developer</span>
+            </h3>
+            <p className="text-[--pri-heading] my-1 text-sm font-semibold">
+              Freelance | Part Time
+            </p>
+            <hr className="my-2" />
+            <p className="my-1 text-sm">
+              Built scalable React/Next.js apps with reusable UI, API
+              integration, and Node.js backend while managing freelance work.
+            </p>
+          </div>
+        </div>
+
+        <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center m-0 mt-16 md:m-5 justify-self-end flex-col md:flex-row">
           <div className="bg-[--orange] text-white py-9 px-14 m-[1px] shadow-lg">
             <h3 className="text-4xl my-1">2023</h3>
             <p className="text-white">Feb to Sep</p>
@@ -73,20 +101,23 @@ function Experiences() {
           ></div>
           <div className="shadow-lg bg-white p-10">
             <h3 className="text-2xl my-1 font-semibold">
-              Web <span className="text-[--orange]">Developer</span>
+              Frontend <span className="text-[--orange]">Developer</span>
             </h3>
             <p className="text-[--orange] my-1 text-sm font-semibold">
               Big Brand Bucket | Gurgaon | Full Time
             </p>
             <hr className="my-2" />
             <p className="my-1 text-sm">
-              Developed React-based client interfaces, improved Lighthouse
+              {/* Developed React-based client interfaces, improved Lighthouse
               scores, and optimized UI layouts for speed, usability, and mobile
-              delivery.
+              delivery. */}
+              Developed WordPress sites and improved Lighthouse score from 65 to
+              90+, enhancing SEO and reducing load time.
             </p>
           </div>
         </div>
-        <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center self-end m-0 mt-16 md:m-5 justify-self-end flex-col md:flex-row">
+
+        <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center self-start m-0 mt-16 md:m-5 justify-self-start flex-col md:flex-row">
           <div className="bg-[--yellow] text-white py-9 px-14 m-[1px] shadow-lg">
             <h3 className="text-4xl my-1">2022</h3>
             <p className="text-white">Sep to Feb</p>
@@ -98,40 +129,45 @@ function Experiences() {
           ></div>
           <div className="shadow-lg bg-white p-10">
             <h3 className="text-2xl my-1 font-semibold">
-              Web <span className="text-[--yellow]">Developer</span>
+              Frontend <span className="text-[--yellow]">Developer</span>
             </h3>
             <p className="text-[--yellow] my-1 text-sm font-semibold">
               Interpret Media | Mumbai | Internship
             </p>
             <hr className="my-2" />
             <p className="my-1 text-sm">
-              Created responsive e-commerce pages, improved performance, helped
-              deliver cleaner product browsing experiences across devices.
+              {/* Created responsive e-commerce pages, improved performance, helped
+              deliver cleaner product browsing experiences across devices. */}
+              Built responsive e-commerce sites using WordPress and improved UI,
+              performance, and overall user experience.
             </p>
           </div>
         </div>
-        <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center self-start m-0 mt-16 md:m-5 justify-self-start flex-col md:flex-row">
-          <div className="bg-[--pri-heading] text-white py-9 px-14 m-[1px] shadow-lg">
+
+        <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center m-0 mt-16 md:m-5 justify-self-end flex-col md:flex-row">
+          <div className="bg-[--link] text-white py-9 px-14 m-[1px] shadow-lg">
             <h3 className="text-4xl my-1">2022</h3>
             <p className="text-white">Jun to Sep</p>
             <h3 className="text-4xl my-1">2022</h3>
           </div>
           <div
             className="triangle"
-            style={{ borderBottom: "20px solid var(--pri-heading)" }}
+            style={{ borderBottom: "20px solid var(--link)" }}
           ></div>
           <div className="shadow-lg bg-white p-10">
             <h3 className="text-2xl my-1 font-semibold">
-              Web <span className="text-[--pri-heading]">Developer</span>
+              Frontend <span className="text-[--link]">Developer</span>
             </h3>
-            <p className="text-[--pri-heading] my-1 text-sm font-semibold">
+            <p className="text-[--link] my-1 text-sm font-semibold">
               WebnU | Delhi | Internship
             </p>
             <hr className="my-2" />
             <p className="my-1 text-sm">
-              Built business websites with HTML, CSS, JS, Shopify, and
+              {/* Built business websites with HTML, CSS, JS, Shopify, and
               WordPress, ensuring responsive layouts, structured UI, and
-              CMS-driven delivery.
+              CMS-driven delivery. */}
+              Built business and e-commerce websites using HTML, CSS, JS,
+              Shopify, and WordPress with responsive design focus.
             </p>
           </div>
         </div>
