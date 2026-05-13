@@ -1,7 +1,9 @@
 import React from "react";
 import profile from "../assets/devgirl.jpg";
 import { Link } from "react-scroll";
-import Resume from "../assets/shanya-sahu-resume.pdf";
+// import Resume from "../assets/shanya-sahu-resume.pdf";
+const resumeLink =
+  "https://drive.google.com/uc?export=download&id=1oyi76a2twdAKsR3vCrkaL7LRBFt-MwQp";
 
 function About() {
   return (
@@ -67,7 +69,7 @@ function About() {
         <div className="hidden lg:flex">
           <a
             download="shanya-resume"
-            href={Resume}
+            href={resumeLink}
             rel="noreferrer"
             className="mr-4 mt-6 float-left py-5 px-14 shadow-lg rounded-full bg-[var(--yellow)] text-white"
           >

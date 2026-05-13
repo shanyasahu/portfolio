@@ -2,7 +2,11 @@ import React, { useState, useEffect } from "react";
 import bg from "../assets/banner_bg.png";
 import profile from "../assets/profile-new.jpg";
 import { Link } from "react-scroll";
-import Resume from "../assets/shanya-sahu-resume.pdf";
+// import Resume from "../assets/shanya-sahu-resume.pdf";
+const resumeLink =
+  "https://drive.google.com/uc?export=download&id=1oyi76a2twdAKsR3vCrkaL7LRBFt-MwQp";
+
+// this is my drive link: https://drive.google.com/file/d/1oyi76a2twdAKsR3vCrkaL7LRBFt-MwQp/view?usp=sharing
 
 function HeroSection() {
   function ChangingTypingEffect({ phrases, typingSpeed, switchDelay }) {
@@ -15,7 +19,7 @@ function HeroSection() {
       if (displayedText !== currentPhrase) {
         timer = setTimeout(() => {
           setDisplayedText(
-            currentPhrase.substring(0, displayedText.length + 1)
+            currentPhrase.substring(0, displayedText.length + 1),
           );
         }, typingSpeed);
       } else {
@@ -79,7 +83,7 @@ function HeroSection() {
             <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start">
               <a
                 download="shanya-resume"
-                href={Resume}
+                href={resumeLink}
                 rel="noreferrer"
                 className="mr-0 md:mr-4 mt-6 float-left py-5 px-14 shadow-lg rounded-full bg-[var(--yellow)] text-white"
               >

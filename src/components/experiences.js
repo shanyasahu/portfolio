@@ -55,16 +55,14 @@ function Experiences() {
             </p>
             <hr className="my-2" />
             <p className="my-1 text-sm">
-              {/* Built scalable Next.js UIs with reusable components, REST API
-              integration, auth flows, and responsive ui optimized for
-              performance. */}
-              Built responsive WordPress sites using HTML, CSS, and JS,
-              improving performance, SEO, and cross-browser compatibility.
+              Built scalable web applications using React.js, Next.js, Tailwind
+              CSS, and Node.js, improving performance, API integration, & user
+              experience.
             </p>
           </div>
         </div>
 
-        <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center m-0 mt-16 md:m-5 justify-self-start flex-col md:flex-row">
+        {/* <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center m-0 mt-16 md:m-5 justify-self-start flex-col md:flex-row">
           <div className="bg-[--pri-heading] text-white py-9 px-14 m-[1px] shadow-lg">
             <h3 className="text-4xl my-1">2024</h3>
             <p className="text-white">Jan to Apr</p>
@@ -87,9 +85,9 @@ function Experiences() {
               integration, and Node.js backend while managing freelance work.
             </p>
           </div>
-        </div>
+        </div> */}
 
-        <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center m-0 mt-16 md:m-5 justify-self-end flex-col md:flex-row">
+        <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center m-0 mt-16 md:m-5 justify-self-start flex-col md:flex-row">
           <div className="bg-[--orange] text-white py-9 px-14 m-[1px] shadow-lg">
             <h3 className="text-4xl my-1">2023</h3>
             <p className="text-white">Feb to Sep</p>
@@ -117,7 +115,7 @@ function Experiences() {
           </div>
         </div>
 
-        <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center self-start m-0 mt-16 md:m-5 justify-self-start flex-col md:flex-row">
+        <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center m-0 mt-16 md:m-5 justify-self-end flex-col md:flex-row">
           <div className="bg-[--yellow] text-white py-9 px-14 m-[1px] shadow-lg">
             <h3 className="text-4xl my-1">2022</h3>
             <p className="text-white">Sep to Feb</p>
@@ -144,7 +142,7 @@ function Experiences() {
           </div>
         </div>
 
-        <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center m-0 mt-16 md:m-5 justify-self-end flex-col md:flex-row">
+        <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center m-0 mt-16 md:m-5 justify-self-start flex-col md:flex-row">
           <div className="bg-[--link] text-white py-9 px-14 m-[1px] shadow-lg">
             <h3 className="text-4xl my-1">2022</h3>
             <p className="text-white">Jun to Sep</p>
