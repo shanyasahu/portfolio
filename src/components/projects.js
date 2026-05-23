@@ -23,6 +23,14 @@ const projectdata = [
   },
 
   {
+    name: "eSkoolnize",
+    desc: "Developed a full-stack school management platform with role-based authentication, secure JWT APIs, scalable backend architecture, and responsive UI.",
+    src: "https://github.com/shanyasahu/eskoolnize-client",
+    techUse: "Next.js, TypeScript, Node.js, Express.js, PostgreSQL",
+    github: "https://github.com/shanyasahu/eskoolnize-server",
+  },
+
+  {
     name: `Lenny | E-Commerce`,
     desc: "Built Product page, navbar, footer, and article section on frontend; developed Article API and Single Product API in backend.",
     src: "https://e-commerce-fullstack-nine.vercel.app/",
@@ -43,13 +51,13 @@ const projectdata = [
     techUse: "NextJS, Tailwind CSS, Firebase",
     github: "#",
   },
-  {
-    name: "The Blogging Bee",
-    desc: "A dynamic blog reading app powered by React, Tailwind, RestAPI, and global state management with React Context.",
-    src: "https://the-blogging-bee.vercel.app/",
-    techUse: "ReactJS, RestAPI, Context API, Tailwind CSS",
-    github: "https://github.com/shanyasahu/the-blogging-bee",
-  },
+  // {
+  //   name: "The Blogging Bee",
+  //   desc: "A dynamic blog reading app powered by React, Tailwind, RestAPI, and global state management with React Context.",
+  //   src: "https://the-blogging-bee.vercel.app/",
+  //   techUse: "ReactJS, RestAPI, Context API, Tailwind CSS",
+  //   github: "https://github.com/shanyasahu/the-blogging-bee",
+  // },
 ];
 
 const Projects = ({ project }) => (
