@@ -7,19 +7,21 @@ import { FaEye } from "react-icons/fa";
 //   ];
 const projectdata = [
   {
-    name: "Project Tracker",
-    desc: "Handled frontend development with login, signup, forgot password flows; built and integrated related authentication APIs.",
-    src: "https://project-tracker-client.coolify.activodigi.com",
-    techUse: "NextJS, Tailwind CSS, PostgreSQL, ExpressJS, JWT",
-    github: "#",
+    name: `ATSForge AI`,
+    desc: "Built an AI interview prep platform with ATS resume tips, job match scoring, AI Q&A, skill gaps, and learning plans.",
+    src: "https://github.com/shanyasahu/atsforge-ai-client",
+    techUse: "MERN, Tailwind CSS, JWT, OAuth, Gemini AP",
+    github: "https://github.com/shanyasahu/atsforge-ai-server",
   },
+
   {
-    name: `Ayodhya Pro`,
-    desc: "Developed complete frontend with API integration. In backend, created Hotel, Precious Moments, About Ayodhya, and Events APIs",
-    src: "https://ayodhyapro.com/",
-    techUse: "NextJS, Tailwind CSS, PostgreSQL, ExpressJS",
-    github: "#",
+    name: `Konvo | Chatting App`,
+    desc: "Built a real-time chat app with JWT auth, responsive UI, Socket.io messaging, KafkaJS streaming, and scalable backend APIs support.",
+    src: "https://github.com/shanyasahu/konvo-client",
+    techUse: "MERN, Next.js, Socket.io, Aiven for Apache Kafka",
+    github: "https://github.com/shanyasahu/konvo-server",
   },
+
   {
     name: `Lenny | E-Commerce`,
     desc: "Built Product page, navbar, footer, and article section on frontend; developed Article API and Single Product API in backend.",
@@ -45,8 +47,8 @@ const projectdata = [
     name: "The Blogging Bee",
     desc: "A dynamic blog reading app powered by React, Tailwind, RestAPI, and global state management with React Context.",
     src: "https://the-blogging-bee.vercel.app/",
-    techUse: "TailwindCSS, ReactJS, RestAPI",
-    github: "https://github.com/Shanya-Sahu/the-blogging-bee",
+    techUse: "ReactJS, RestAPI, Context API, Tailwind CSS",
+    github: "https://github.com/shanyasahu/the-blogging-bee",
   },
 ];
 
