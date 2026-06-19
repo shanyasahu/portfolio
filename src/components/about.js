@@ -74,7 +74,7 @@ function About() {
           <strong> 30+ REST APIs </strong>, improved page load performance by
           <strong> 30% </strong>, and contributed to{" "}
           <strong>CI/CD workflows </strong> and
-          <strong> AWS deployments.</strong>
+          <strong> AWS deployments</strong>.
           <br />
         </p>
 
