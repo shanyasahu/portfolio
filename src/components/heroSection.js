@@ -44,9 +44,9 @@ function HeroSection() {
 
   const phrases = [
     "Frontend Developer",
+    "React Developer",
     "Full Stack Developer",
     "MERN Stack Developer",
-    "WordPress Developer",
   ];
 
   return (
@@ -67,7 +67,7 @@ function HeroSection() {
         <div className="absolute top-0 pl-0 md:pl-10 xl:pl-20 w-full h-full flex justify-center items-center flex-col-reverse lg:flex-row">
           <div className="w-full lg:w-[60%] xl:w-[40%] flex justify-center items-center lg:items-start flex-col">
             <h3 className="text-xl xl:text-2xl leading-10 bg-highlight font-semibold">
-              Hello!
+              Hi there!
             </h3>
             <h1 className="text-4xl xl:text-6xl font-bold leading-tight">
               I'm Shanya Sahu

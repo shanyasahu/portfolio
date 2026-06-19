@@ -1,4 +1,30 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
+
+const AnimatedCard = ({ children, direction = "left", delay = 0 }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.15,
+  });
+
+  const hiddenClass =
+    direction === "left"
+      ? "-translate-x-24 opacity-0"
+      : "translate-x-24 opacity-0";
+
+  return (
+    <div
+      ref={ref}
+      style={{ transitionDelay: `${delay}ms` }}
+      className={`
+        transition-all duration-700 ease-out
+        ${inView ? "translate-x-0 opacity-100" : hiddenClass}
+      `}
+    >
+      {children}
+    </div>
+  );
+};
 
 function Experiences() {
   return (
@@ -6,169 +32,143 @@ function Experiences() {
       <h4 className="text-sm text-[var(--pri-heading)] font-medium text-center">
         Experiences
       </h4>
+
       <h3 className="font-semibold text-2xl text-center uppercase">
         I had worked on multiple companies!
       </h3>
+
       <section className="grid w-full">
-        {/* <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center m-0 mt-16 md:m-5 justify-self-start flex-col md:flex-row">
-          <div className="bg-[--link] text-white py-9 px-14 m-[1px] shadow-lg">
-            <h3 className="text-4xl my-1">2023</h3>
-            <p className="text-white">Dec to Pre</p>
-            <h3 className="text-4xl my-1">2025</h3>
-          </div>
-          <div
-            className="triangle"
-            style={{ borderBottom: "20px solid var(--link)" }}
-          ></div>
-          <div className="shadow-lg bg-white p-10">
-            <h3 className="text-2xl my-1 font-semibold">
-              Full Stack <span className="text-[--link]">Developer</span>
-            </h3>
-            <p className="text-[--link] my-1 text-sm font-semibold">
-              Activo Digital Solutions | Freelance
-            </p>
-            <hr className="my-2" />
-            <p className="my-1 text-sm">
-              Full stack developer with live project experience, strong
-              collaboration skills, and solid industry-level coding knowledge in
-              Frontend development.
-            </p>
-          </div>
-        </div> */}
+        {/* CreatUs Media */}
+        <AnimatedCard direction="left" delay={100}>
+          <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center m-0 mt-16 md:m-5 justify-self-end flex-col md:flex-row">
+            <div className="bg-[--pink] text-white py-9 px-14 m-[1px] shadow-lg">
+              <h3 className="text-4xl my-1">2023</h3>
+              <p className="text-white">Oct to Pre</p>
+              <h3 className="text-4xl my-1">2025</h3>
+            </div>
 
-        <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center m-0 mt-16 md:m-5 justify-self-end flex-col md:flex-row">
-          <div className="bg-[--pink] text-white py-9 px-14 m-[1px] shadow-lg">
-            <h3 className="text-4xl my-1">2023</h3>
-            <p className="text-white">Oct to Pre</p>
-            <h3 className="text-4xl my-1">2025</h3>
-          </div>
-          <div
-            className="triangle"
-            style={{ borderBottom: "20px solid var(--pink)" }}
-          ></div>
-          <div className="shadow-lg bg-white p-10">
-            <h3 className="text-2xl my-1 font-semibold">
-              Frontend <span className="text-[--pink]">Developer</span>
-            </h3>
-            <p className="text-[--pink] my-1 text-sm font-semibold">
-              CreatUs Media | Belgium | Full Time
-            </p>
-            <hr className="my-2" />
-            <p className="my-1 text-sm">
-              Built scalable web applications using React.js, Next.js, Tailwind
-              CSS, and Node.js, improving performance, API integration, & user
-              experience.
-            </p>
-          </div>
-        </div>
+            <div
+              className="triangle"
+              style={{ borderBottom: "20px solid var(--pink)" }}
+            ></div>
 
-        {/* <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center m-0 mt-16 md:m-5 justify-self-start flex-col md:flex-row">
-          <div className="bg-[--pri-heading] text-white py-9 px-14 m-[1px] shadow-lg">
-            <h3 className="text-4xl my-1">2024</h3>
-            <p className="text-white">Jan to Apr</p>
-            <h3 className="text-4xl my-1">2025</h3>
-          </div>
-          <div
-            className="triangle"
-            style={{ borderBottom: "20px solid var(--pri-heading)" }}
-          ></div>
-          <div className="shadow-lg bg-white p-10">
-            <h3 className="text-2xl my-1 font-semibold">
-              Frontend <span className="text-[--pri-heading]">Developer</span>
-            </h3>
-            <p className="text-[--pri-heading] my-1 text-sm font-semibold">
-              Freelance | Part Time
-            </p>
-            <hr className="my-2" />
-            <p className="my-1 text-sm">
-              Built scalable React/Next.js apps with reusable UI, API
-              integration, and Node.js backend while managing freelance work.
-            </p>
-          </div>
-        </div> */}
+            <div className="shadow-lg bg-white p-10">
+              <h3 className="text-2xl my-1 font-semibold">
+                Frontend <span className="text-[--pink]">Developer</span>
+              </h3>
 
-        <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center m-0 mt-16 md:m-5 justify-self-start flex-col md:flex-row">
-          <div className="bg-[--orange] text-white py-9 px-14 m-[1px] shadow-lg">
-            <h3 className="text-4xl my-1">2023</h3>
-            <p className="text-white">Feb to Sep</p>
-            <h3 className="text-4xl my-1">2023</h3>
-          </div>
-          <div
-            className="triangle"
-            style={{ borderBottom: "20px solid var(--orange)" }}
-          ></div>
-          <div className="shadow-lg bg-white p-10">
-            <h3 className="text-2xl my-1 font-semibold">
-              Frontend <span className="text-[--orange]">Developer</span>
-            </h3>
-            <p className="text-[--orange] my-1 text-sm font-semibold">
-              Big Brand Bucket | Gurgaon | Full Time
-            </p>
-            <hr className="my-2" />
-            <p className="my-1 text-sm">
-              {/* Developed React-based client interfaces, improved Lighthouse
-              scores, and optimized UI layouts for speed, usability, and mobile
-              delivery. */}
-              Developed WordPress sites and improved Lighthouse score from 65 to
-              90+, enhancing SEO and reducing load time.
-            </p>
-          </div>
-        </div>
+              <p className="text-[--pink] my-1 text-sm font-semibold">
+                CreatUs Media | Belgium | Full Time
+              </p>
 
-        <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center m-0 mt-16 md:m-5 justify-self-end flex-col md:flex-row">
-          <div className="bg-[--yellow] text-white py-9 px-14 m-[1px] shadow-lg">
-            <h3 className="text-4xl my-1">2022</h3>
-            <p className="text-white">Sep to Feb</p>
-            <h3 className="text-4xl my-1">2023</h3>
-          </div>
-          <div
-            className="triangle"
-            style={{ borderBottom: "20px solid var(--yellow)" }}
-          ></div>
-          <div className="shadow-lg bg-white p-10">
-            <h3 className="text-2xl my-1 font-semibold">
-              Frontend <span className="text-[--yellow]">Developer</span>
-            </h3>
-            <p className="text-[--yellow] my-1 text-sm font-semibold">
-              Interpret Media | Mumbai | Internship
-            </p>
-            <hr className="my-2" />
-            <p className="my-1 text-sm">
-              {/* Created responsive e-commerce pages, improved performance, helped
-              deliver cleaner product browsing experiences across devices. */}
-              Built responsive e-commerce sites using WordPress and improved UI,
-              performance, and overall user experience.
-            </p>
-          </div>
-        </div>
+              <hr className="my-2" />
 
-        <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center m-0 mt-16 md:m-5 justify-self-start flex-col md:flex-row">
-          <div className="bg-[--link] text-white py-9 px-14 m-[1px] shadow-lg">
-            <h3 className="text-4xl my-1">2022</h3>
-            <p className="text-white">Jun to Sep</p>
-            <h3 className="text-4xl my-1">2022</h3>
+              <p className="my-1 text-sm">
+                Built scalable Next.js applications, integrated APIs, optimized
+                performance, and streamlined AWS deployments using CI/CD.
+              </p>
+            </div>
           </div>
-          <div
-            className="triangle"
-            style={{ borderBottom: "20px solid var(--link)" }}
-          ></div>
-          <div className="shadow-lg bg-white p-10">
-            <h3 className="text-2xl my-1 font-semibold">
-              Frontend <span className="text-[--link]">Developer</span>
-            </h3>
-            <p className="text-[--link] my-1 text-sm font-semibold">
-              WebnU | Delhi | Internship
-            </p>
-            <hr className="my-2" />
-            <p className="my-1 text-sm">
-              {/* Built business websites with HTML, CSS, JS, Shopify, and
-              WordPress, ensuring responsive layouts, structured UI, and
-              CMS-driven delivery. */}
-              Built business and e-commerce websites using HTML, CSS, JS,
-              Shopify, and WordPress with responsive design focus.
-            </p>
+        </AnimatedCard>
+
+        {/* Big Brand Bucket */}
+        <AnimatedCard direction="right" delay={200}>
+          <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center m-0 mt-16 md:m-5 justify-self-start flex-col md:flex-row">
+            <div className="bg-[--orange] text-white py-9 px-14 m-[1px] shadow-lg">
+              <h3 className="text-4xl my-1">2023</h3>
+              <p className="text-white">Feb to Sep</p>
+              <h3 className="text-4xl my-1">2023</h3>
+            </div>
+
+            <div
+              className="triangle"
+              style={{ borderBottom: "20px solid var(--orange)" }}
+            ></div>
+
+            <div className="shadow-lg bg-white p-10">
+              <h3 className="text-2xl my-1 font-semibold">
+                Frontend <span className="text-[--orange]">Developer</span>
+              </h3>
+
+              <p className="text-[--orange] my-1 text-sm font-semibold">
+                Big Brand Bucket | Gurgaon | Full Time
+              </p>
+
+              <hr className="my-2" />
+
+              <p className="my-1 text-sm">
+                Developed WordPress sites and improved Lighthouse score from 65
+                to 90+, enhancing SEO and reducing load time.
+              </p>
+            </div>
           </div>
-        </div>
+        </AnimatedCard>
+
+        {/* Interpret Media */}
+        <AnimatedCard direction="left" delay={300}>
+          <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center m-0 mt-16 md:m-5 justify-self-end flex-col md:flex-row">
+            <div className="bg-[--yellow] text-white py-9 px-14 m-[1px] shadow-lg">
+              <h3 className="text-4xl my-1">2022</h3>
+              <p className="text-white">Sep to Feb</p>
+              <h3 className="text-4xl my-1">2023</h3>
+            </div>
+
+            <div
+              className="triangle"
+              style={{ borderBottom: "20px solid var(--yellow)" }}
+            ></div>
+
+            <div className="shadow-lg bg-white p-10">
+              <h3 className="text-2xl my-1 font-semibold">
+                Frontend <span className="text-[--yellow]">Developer</span>
+              </h3>
+
+              <p className="text-[--yellow] my-1 text-sm font-semibold">
+                Interpret Media | Mumbai | Internship
+              </p>
+
+              <hr className="my-2" />
+
+              <p className="my-1 text-sm">
+                Built responsive e-commerce sites using WordPress and improved
+                UI, performance, and overall user experience.
+              </p>
+            </div>
+          </div>
+        </AnimatedCard>
+
+        {/* WebnU */}
+        <AnimatedCard direction="right" delay={400}>
+          <div className="w-full md:w-[80%] lg:w-[50%] flex justify-center items-center m-0 mt-16 md:m-5 justify-self-start flex-col md:flex-row">
+            <div className="bg-[--link] text-white py-9 px-14 m-[1px] shadow-lg">
+              <h3 className="text-4xl my-1">2022</h3>
+              <p className="text-white">Jun to Sep</p>
+              <h3 className="text-4xl my-1">2022</h3>
+            </div>
+
+            <div
+              className="triangle"
+              style={{ borderBottom: "20px solid var(--link)" }}
+            ></div>
+
+            <div className="shadow-lg bg-white p-10">
+              <h3 className="text-2xl my-1 font-semibold">
+                Frontend <span className="text-[--link]">Developer</span>
+              </h3>
+
+              <p className="text-[--link] my-1 text-sm font-semibold">
+                WebnU | Delhi | Internship
+              </p>
+
+              <hr className="my-2" />
+
+              <p className="my-1 text-sm">
+                Built business and e-commerce websites using HTML, CSS, JS,
+                Shopify, and WordPress with responsive design focus.
+              </p>
+            </div>
+          </div>
+        </AnimatedCard>
       </section>
     </div>
   );

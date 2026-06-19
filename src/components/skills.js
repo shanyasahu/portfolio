@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
+
 import Html from "../assets/html.png";
 import Css from "../assets/css.png";
 import Js from "../assets/javascript.png";
@@ -33,35 +35,58 @@ const skills = [
   { name: "Shopify", level: "30%", icon: Shopify },
 ];
 
-const SkillBar = ({ skill }) => (
-  <div>
-    <div className="flex items-center mb-8 w-full lg:w-[90%]">
+const SkillBar = ({ skill, index }) => {
+  const [width, setWidth] = useState("0%");
+
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      const timer = setTimeout(() => {
+        setWidth(skill.level);
+      }, index * 100); // stagger animation
+
+      return () => clearTimeout(timer);
+    }
+  }, [inView, skill.level, index]);
+
+  return (
+    <div ref={ref} className="flex items-center mb-8 w-full lg:w-[90%]">
       <img
         src={skill.icon}
         alt={`${skill.name} icon`}
-        className="w-7 h-7 mr-2 object-contain"
+        className="w-7 h-7 mr-3 object-contain"
       />
-      <div className="flex-1 mr-2">
-        <div className="text-sm font-medium">{skill.name}</div>
-        <div className="w-full bg-gray-300 rounded-full h-2 dark:bg-gray-200">
+
+      <div className="flex-1 mr-3">
+        <div className="flex justify-between items-center mb-2">
+          <span className="text-sm font-medium">{skill.name}</span>
+          <span className="text-sm font-medium">{skill.level}</span>
+        </div>
+
+        <div className="w-full h-2 bg-gray-300 rounded-full overflow-hidden">
           <div
-            className="bg-[var(--pink)] h-2 rounded-full"
-            style={{ width: skill.level }}
-          ></div>
+            className="h-full rounded-full bg-[var(--pink)] transition-all duration-1000 ease-out"
+            style={{ width }}
+          />
         </div>
       </div>
-      <span className="text-sm font-medium">{skill.level}</span>
     </div>
-  </div>
-);
+  );
+};
 
 const Skills = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 mt-10">
-      {skills.map((skill) => (
-        <SkillBar key={skill.name} skill={skill} />
-      ))}
-    </div>
+    <section className="mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-8 gap-y-2">
+        {skills.map((skill, index) => (
+          <SkillBar key={skill.name} skill={skill} index={index} />
+        ))}
+      </div>
+    </section>
   );
 };
 

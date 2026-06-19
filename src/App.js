@@ -22,7 +22,7 @@ function App() {
   // }, []);
 
   return (
-    <div className="App scroll-smooth relative">
+    <div className="App scroll-smooth relative overflow-x-hidden">
       {/* {loading ? (
         <Spinner />
       ) : ( */}
