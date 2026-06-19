@@ -13,35 +13,35 @@ import Footer from "./components/footer";
 import Education from "./components/education";
 
 function App() {
-  // const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
 
-  // useEffect(() => {
-  //   window.onload = () => {
-  //     setLoading(false); // Set loading to false once everything on the page has loaded
-  //   };
-  // }, []);
+  useEffect(() => {
+    window.onload = () => {
+      setLoading(false); // Set loading to false once everything on the page has loaded
+    };
+  }, []);
 
   return (
     <div className="App scroll-smooth relative overflow-x-hidden">
-      {/* {loading ? (
+      {loading ? (
         <Spinner />
-      ) : ( */}
-      <>
-        <Sidebar />
-        <aside>
-          <HeroSection />
-          <About />
-          <GoodAt />
-          <Experiences />
-          <Education />
-          <SkillSec />
-          <ProjectSec />
-          <Contact />
-          <ScrollToTopButtom />
-          <Footer />
-        </aside>
-      </>
-      {/* )} */}
+      ) : (
+        <>
+          <Sidebar />
+          <aside>
+            <HeroSection />
+            <About />
+            <GoodAt />
+            <Experiences />
+            <Education />
+            <SkillSec />
+            <ProjectSec />
+            <Contact />
+            <ScrollToTopButtom />
+            <Footer />
+          </aside>
+        </>
+      )}
     </div>
   );
 }
