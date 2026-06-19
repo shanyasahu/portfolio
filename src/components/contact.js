@@ -20,7 +20,7 @@ const contactData = [
   },
   {
     title: "Email Me",
-    value: "shanyasahu11@gmail.com",
+    value: "shanyasahu.dev@gmail.com",
     icon: email,
     animation: "translate-x-16",
   },
